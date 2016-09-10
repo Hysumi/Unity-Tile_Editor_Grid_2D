@@ -38,6 +38,7 @@ public class CustomMenuItems : Editor {
         //Cria uma nova Window caso não tenha uma aberta
         LevelEditorWindow window = (LevelEditorWindow)EditorWindow.GetWindow(typeof(LevelEditorWindow));
         window.titleContent.text = "Level Editor";
+        window.minSize = new Vector2(286f, 170f);
         window.Show();
     }
 
